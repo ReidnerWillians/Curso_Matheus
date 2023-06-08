@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
     <title>Conversor de Unidades</title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -31,6 +32,12 @@
                 <option value="mm">Milimetro</option>
             </select>
         </div>
+        <button id="convert-btn">Converter</button>
+        <div class="output-group">
+            <label for="output">Resultado</label>
+            <input type="text" id="output" readonly />
+        </div>
+        <div id="message"></div>
     </div>
 </body>
 </html>
